@@ -8,5 +8,4 @@ def contact_view(request):
         message = request.POST.get('message')
         contact = Contact(name=name, email=email, message=message)
         contact.save()
-        # perform any other actions you need here
     return render(request, 'contact.html')
